@@ -1,0 +1,1 @@
+[Lab 6a](https://cs.colby.edu/courses/S22/cs251/labs/Lab06a.zip)
