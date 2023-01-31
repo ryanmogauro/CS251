@@ -30,5 +30,5 @@ Some Git Instructions
     * first, you might need to set a ssh token in github
     * then, you need to clone (checkout) the repository
       * in the terminal window, make sure you are in the folder where you want to be and type: 
-        * git clone git@github.com:(yourusername)/CS252S22.git 
+        * git clone git@github.com:(yourusername)/CS252S22ProjectsLabs.git 
       * don't forget to commit your code before you exit the browser!
