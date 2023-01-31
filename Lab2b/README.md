@@ -1,1 +1,0 @@
-[Lab 2b](https://cs.colby.edu/courses/S22/cs251/labs/Lab2b.zip)
