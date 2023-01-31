@@ -4,7 +4,7 @@ Template for CS252 Spring 22 Projects and Labs
 Some Git Instructions
 ---------------------
 
-* Fork this git repository (get your own copy): log in to [github](https://github.com) and go to [this page](https://github.com/ajstent/CS252S22ProjectsLabs) and click "Fork"
+* Fork this git repository (get your own copy): log in to [github](https://github.com) and go to [this page](https://github.com/ajstent/CS252ProjectsLabs) and click "Fork"
   * In Settings:
     * Make sure you set the repository to 'Private'
     * Make sure you add your instructor (ajstent) as a Collaborator
@@ -14,7 +14,7 @@ Some Git Instructions
     * Open your fork (copy) of the repository in a GitHub code space
     * Don't forget to commit your work before the code space shuts down!
   * Using git on the commandline (including in a jupyterhub terminal):
-    * Get your fork (copy) of the repository: git clone git@github.com:(yourusername)/CS252S22ProjectsLabs.git
+    * Get your fork (copy) of the repository: git clone git@github.com:(yourusername)/CS252ProjectsLabs.git
     * Update your repository after you have...
       * Changed a file: 
         * git commit -m 'This is how I changed these files' .
@@ -30,5 +30,5 @@ Some Git Instructions
     * first, you might need to set a ssh token in github
     * then, you need to clone (checkout) the repository
       * in the terminal window, make sure you are in the folder where you want to be and type: 
-        * git clone git@github.com:(yourusername)/CS252S22ProjectsLabs.git 
+        * git clone git@github.com:(yourusername)/CS252ProjectsLabs.git 
       * don't forget to commit your code before you exit the browser!
