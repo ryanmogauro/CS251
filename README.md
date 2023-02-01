@@ -26,7 +26,7 @@ Some Git Instructions
         * git rm <file I want to go away>
         * Then see "Changed a file"
   * Using git from VSCode: [docs](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/)
-  * Using git from jupyterhub:
+  * Using git from jupyterhub (you may use cs251.jupyter.colby.edu):
     * first, you might need to set a ssh token in github
     * then, you need to clone (checkout) the repository
       * in the terminal window, make sure you are in the folder where you want to be and type: 
