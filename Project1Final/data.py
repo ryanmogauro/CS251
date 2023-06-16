@@ -41,8 +41,6 @@ class Data:
         if filepath is not None:
             self.read(filepath)
 
-        pass
-
     def read(self, filepath):
         '''Read in the .csv file `filepath` in 2D tabular format. Convert to numpy ndarray called
         `self.data` at the end (think of this as 2D array or table).
@@ -176,7 +174,6 @@ class Data:
         #returns copy of data field, representing all data
         datacopy = self.data.copy()
         return np.array(datacopy)
-        pass
 
     def head(self):
         '''Return the 1st five data samples (all variables)
@@ -186,8 +183,6 @@ class Data:
         head = self.data[:5]
         return np.array(head)
         
-        
-        pass
 
     def tail(self):
         '''Return the last five data samples (all variables)
@@ -208,7 +203,6 @@ class Data:
 
         limitedSamps = self.data[start_row: end_row]
         self.data = np.array(limitedSamps)
-        pass
 
     def select_data(self, headers, rows=[]):
 
@@ -250,7 +244,3 @@ class Data:
                     newdata.append(i)
                 rowCounter+=1
             return np.array(newdata)
-            
-            
-        
-        pass
