@@ -30,8 +30,7 @@ class Analysis:
         data: Data object. Contains all data samples and variables in a dataset.
         '''
         self.data = data
-        pass
-
+        
     def min(self, headers, rows=[]):
         '''Computes the minimum of each variable in `headers` in the data object.
         Possibly only in a subset of data samples (`rows`) if `rows` is not empty.
@@ -55,8 +54,6 @@ class Analysis:
         data = self.data.select_data(headers, rows)
         return np.min(data, axis=0)
 
-        pass
-
     def max(self, headers, rows=[]):
         '''Computes the maximum of each variable in `headers` in the data object.
         Possibly only in a subset of data samples (`rows`) if `rows` is not empty.
@@ -78,7 +75,6 @@ class Analysis:
         '''
         data = self.data.select_data(headers, rows)
         return np.max(data, axis=0)
-        pass
 
     def range(self, headers, rows=[]):
         '''Computes the range [min, max] for each variable in `headers` in the data object.
@@ -106,7 +102,6 @@ class Analysis:
         data = self.data.select_data(headers, rows)
         return [np.min(data, axis=0), np.max(data, axis=0)]
 
-        pass
 
     def mean(self, headers, rows=[]):
         '''Computes the mean for each variable in `headers` in the data object.
@@ -132,7 +127,6 @@ class Analysis:
         data = self.data.select_data(headers, rows)
         return np.sum(data, axis=0)/data.shape[0]
 
-        pass
 
     def var(self, headers, rows=[]):
         '''Computes the variance for each variable in `headers` in the data object.
@@ -157,7 +151,6 @@ class Analysis:
 
         data = self.data.select_data(headers, rows)
         return np.sum(np.square(data - self.mean(headers, rows)), axis=0)/(data.shape[0]-1)
-        pass
 
     def std(self, headers, rows=[]):
         '''Computes the standard deviation for each variable in `headers` in the data object.
@@ -181,7 +174,6 @@ class Analysis:
         '''
         return np.sqrt(self.var(headers, rows))
 
-        pass
 
     def show(self):
         '''Simple wrapper function for matplotlib's show function.
@@ -221,7 +213,6 @@ class Analysis:
         plt.xlabel(str(ind_var))
         plt.ylabel(str(dep_var))
         return (x, y)
-        pass
 
     def pair_plot(self, data_vars, fig_sz=(12, 12), title=''):
         '''Create a pair plot: grid of scatter plots showing all combinations of variables in
@@ -270,4 +261,3 @@ class Analysis:
                 if j == 0:
                     axes[i, j].set_ylabel(data_vars[i])
         return fig, axes
-        pass
